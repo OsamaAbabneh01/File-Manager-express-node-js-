@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1><span>File Manager</span></h1>
+    <section>
+        <h2>Read File</h2>
+        <input id="filename-read" type="text" placeholder="Enter your file name">
+        <button onclick="readFile()">Read File</button>
+        <div id="readFileResponse"></div>
+    </section>
+    <section>
+        <h2>Write To File</h2>
+        <input id="filename-write" type="text" placeholder="Enter your file name">
+        <textarea name="" id="content-write" placeholder="Enter your content..."></textarea>
+        <button onclick="writeToFile()">Write To File</button>
+        <div id="writeFileResponse"></div>
+    </section>
+    <section>
+        <h2>Append To File</h2>
+        <input id="filename-append" type="text" placeholder="Enter your file name">
+        <textarea name="" id="content-append" placeholder="Enter your content..."></textarea>
+        <button onclick="appendToFile()" type="button">Append To File</button>
+        <div id="appendFileResponse"></div>
+    </section>
+    <section>
+        <h2>Rename File</h2>
+        <input id="oldFileName" type="text" placeholder="Enter your old file name">
+        <input id="newFileName" type="text" placeholder="Enter your new file name">
+        <button onclick="renameFile()">Rename</button>
+        <div id="renameFileResponse"></div>
+    </section>
+    <section>
+        <h2>Delete File</h2>
+        <input id="filename-delete" type="text" placeholder="Enter your file name">
+        <button onclick="deleteFile()">Delete File</button>
+        <div id="deleteFileResponse"></div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
